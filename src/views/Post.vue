@@ -40,7 +40,7 @@
 								<div class="view--post-content-body">
 									<p>{{ comment.content }}</p>
 								</div>
-								<div v-if="authUser.displayName == comment.user" class="view--post-content--comments-comment-delete">
+								<div v-if="authUser.displayName == comment.user" class="view--post-content-comments-comment-delete">
 									<button @click="deleteComment($route.params.topic, $route.params.post, index)" class="delete"><span>&times;</span> Delete Comment</button>
 								</div>
 							</div>
